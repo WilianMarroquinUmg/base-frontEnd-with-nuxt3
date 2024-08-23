@@ -20,7 +20,7 @@ export default defineNuxtConfig({
 
   sanctum: {
     mode : 'token',
-    baseUrl: 'http://sigua.local/',
+    baseUrl: 'http://backend-laravel.local/',
 
     userStateKey: 'sanctum.user.identity',
 
@@ -31,7 +31,7 @@ export default defineNuxtConfig({
       csrf: '/sanctum/csrf-cookie',
       login: 'api/auth/login',
       logout: 'api/auth/logout',
-      user: '/api/auth/user' // Endpoint para obtener el usuario autenticado
+      user: '/api/user' // Endpoint para obtener el usuario autenticado
     },
 
     client: {
